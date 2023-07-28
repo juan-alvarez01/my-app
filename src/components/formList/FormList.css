@@ -1,0 +1,46 @@
+.character-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1%;
+    margin: 0;
+    background-color: #222;
+  }
+  .character-card {
+    background-color: #333;
+    color: #fff;
+    width: 250px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background-color 0.2s ease; /* Agregamos el cambio de color de fondo */
+  }
+  .character-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  .character-card button {
+    background-color: #00adb5;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .character-card button:hover {
+    background-color: #393e46;
+  }
+  .character-card:hover {
+    transform: scale(1.1); 
+    background-color: #444;
+  }
+  @media screen and (max-width: 600px) {
+    .character-card {
+      width: 100%;
+    }
+  }
+  

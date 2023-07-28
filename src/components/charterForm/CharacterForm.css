@@ -1,0 +1,54 @@
+.character-form {
+    background-color: #f5f5f5; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .character-form h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  
+  .character-form ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .character-form li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .character-form label {
+    width: 150px;
+    font-size: 16px;
+    margin-right: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .character-form input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 8px 20px;
+    background-color: #222; 
+    color: #fff; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #00adb5; 
+  }
+  

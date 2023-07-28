@@ -1,42 +1,30 @@
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import FormProds from '../templates/formProds/FormProds';
-import ContactForm from '../templates/contact/Contact';
-import About from '../templates/about/about';
+import React from 'react';
+import './Footer.css'; 
 
-export default function Footer(params) {
-   
-  return  ( 
-    <Router>
-    <div>
-      <ul>
-        <li>
-          <h1>Inicio</h1>
+const Footer = () => {
+  return (
+    <footer className="footer">
+      <ul className="footer-links">
+        <li className="footer-link-item">
+          <a href="/">Inicio</a>
         </li>
-        <li>
-          <Link to="/alta">Alta</Link>
+        <li className="footer-link-item">
+          <a href="/alta">Alta</a>
         </li>
-        <li>
-          <Link to="/contacto">Contacto</Link>
+        <li className="footer-link-item">
+          <a href="/contacto">Contacto</a>
         </li>
-        <li> 
-          <Link to="/nosotros">Nosotros</Link>
+        <li className="footer-link-item">
+          <a href="/nosotros">Nosotros</a>
         </li>
       </ul>
-    </div>
-    <Routes>
-      <Route path="/alta" element={<FormProds />} />
-      <Route path="/contacto" element={<ContactForm />} />
-      <Route path="/nosotros" element={<About />} />
-    </Routes>
-  
-    <div>
-      <ul>
-        <li><i ></i><p>Ubicacion</p></li>
-        <li><i></i><p>Numero</p></li>
-        <li><i ></i><p>Correo electronico</p></li>
-        <li><i></i><p>Horarios</p></li>
-      </ul>
-    </div>
-</Router>
-  ) 
-}
+      <div className="footer-info">
+        <p>Ubicación: AdultSwim</p>
+        <p>Teléfono: (666) 666-6666</p>
+        <p>Correo electrónico: JamalAlvarez666@gmail.com</p>
+        <p>Horarios: Martes & Viernes de 5:00 PM a 8:00 PM</p>
+      </div>
+    </footer>
+  );
+};
+export default Footer;

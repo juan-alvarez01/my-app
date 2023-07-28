@@ -1,0 +1,24 @@
+/* CharacterCard.css */
+
+.character-card {
+  background-color: #333;
+  color: #fff;
+  width: 250px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, background-color 0.2s ease, filter 0.2s ease; /* Agregamos la transición para el zoom y cambio de color */
+}
+
+.character-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.character-card:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+  background-color: #444; /* Cambia el valor para ajustar el color de fondo en hover */
+  filter: brightness(110%); /* Ajusta el brillo para que la card se aclare un poco al pasar el mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Añade una sombra más pronunciada al pasar el mouse */
+}
