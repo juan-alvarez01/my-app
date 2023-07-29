@@ -1,28 +1,25 @@
 .header-nav {
     background-color: #222; 
     color: #fff; 
-    padding: 20px;
+    padding: 0.5%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
-  
   .header-nav-list {
     list-style: none;
     display: flex;
     gap: 20px;
+    padding: 3%;
   }
-  
   .header-nav-item {
     cursor: pointer;
     font-size: 18px;
   }
-  
   .header-nav-item a {
     color: #ccc; 
     text-decoration: none;
     padding: 5px;
     font-family: cursive;
   }
-  
   .header-nav-item a:hover {
     color: #00adb5; 
   }

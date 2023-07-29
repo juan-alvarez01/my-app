@@ -27,7 +27,7 @@ export default function CharacterForm() {
 
   return (
     <>
-      <h1 className="character-form">Formulario De Personaje</h1>
+      <h1 >Formulario De Personaje</h1>
       <form onSubmit={handleSubmit} className="character-form">
         <ul>
           <li>

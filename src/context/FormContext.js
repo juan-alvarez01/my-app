@@ -20,39 +20,30 @@ export function FormProvider({ children,  addCharacter }) {
   const handleSubmit = (e) => { 
     e.preventDefault();
     const validationErrors = {};
-
     if (!image.trim()) {
         validationErrors.image = "La imagen es requerida.";
       }
-  
       if (!name.trim()) {
         validationErrors.name = "El nombre es requerido.";
       }
-  
       if (!status.trim()) {
         validationErrors.status = "El estado es requerido.";
       }
-  
       if (!species.trim()) {
         validationErrors.species = "La especie es requerida.";
       }
-  
       if (!gender.trim()) {
         validationErrors.gender = "El género es requerido.";
       }
-  
       if (!origin.trim()) {
         validationErrors.origin = "El origen es requerido.";
       }
-  
       if (!location.trim()) {
         validationErrors.location = "La locación es requerida.";
       }
-  
       if (!episodes.trim()) {
         validationErrors.episodes = "El episodio es requerido.";
       }
-
     if (Object.keys(validationErrors).length === 0) {
       addCharacter({
         id: Date.now(),
@@ -79,7 +70,6 @@ export function FormProvider({ children,  addCharacter }) {
       setErrors(validationErrors);
     }
   };
-
   const formState = {
     image,
     setImage,
@@ -101,6 +91,5 @@ export function FormProvider({ children,  addCharacter }) {
     errors,
     addCharacter,
   };
-
   return <FormContext.Provider value={formState}>{children}</FormContext.Provider>;
 }

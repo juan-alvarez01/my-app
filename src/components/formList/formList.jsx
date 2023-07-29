@@ -1,9 +1,9 @@
 
 export default function formList({ characters }) {
     return (
-      <ul class="character-list">
+      <ul className="character-list">
       {characters.map((character) => (
-        <li key={character.id} className="character-card">
+        <li key={character.id} >
           <img src={character.image} alt="Character" />
           <p>Name: {character.name}</p>
           <p>Status: {character.status}</p>

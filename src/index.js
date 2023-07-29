@@ -6,6 +6,5 @@ const root = document.querySelector('#root')
 
 ReactClient.createRoot(root).render(
     <App />
-    
 )
 

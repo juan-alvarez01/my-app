@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import CharacterCard from "./Cards";
 import CardDetailLayout from "../cards/CardDetail";
 
-
 const CharacterList = () => {
   const [characters, setCharacters] = useState([]);
   const [selectedCharacter, setSelectedCharacter] = useState(null);
@@ -17,22 +16,25 @@ const CharacterList = () => {
         console.error("Error fetching characters:", error);
       }
     };
-
     fetchCharacters();
   }, []);
-
   const handleDetailClick = (character) => {
     setSelectedCharacter(character);
   };
-
   const handleDetailClose = () => {
     setSelectedCharacter(null);
   };
 
   return (
     <div class="character-list">
-      <h2>Personajes De Rick and Morty</h2>
+     <img src="/Media/Gif/Rick-Morty-Banner.gif" alt="Rick && Morty"/>
       <div className="character-list">
+        {selectedCharacter && (
+        <CardDetailLayout
+          character={selectedCharacter}
+          onCloseClick={handleDetailClose}
+        />
+      )}
         {characters.map((character) => (
           <CharacterCard
             key={character.id}
@@ -41,12 +43,6 @@ const CharacterList = () => {
           />
         ))}
       </div>
-      {selectedCharacter && (
-        <CardDetailLayout
-          character={selectedCharacter}
-          onCloseClick={handleDetailClose}
-        />
-      )}
     </div>
   );
 };

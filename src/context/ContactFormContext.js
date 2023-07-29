@@ -11,24 +11,20 @@ export function ContactFormProvider({ children }) {
   const [email, setEmail] = useState("");
   const [comments, setComments] = useState("");
   const [errors, setErrors] = useState({});
-  const [contacts, setContacts] = useState([]); // Nuevo estado para almacenar los contactos
+  const [contacts, setContacts] = useState([]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const validationErrors = {};
-
     if (!name.trim()) {
       validationErrors.name = "El Nombre es requerido.";
     }
-
     if (!email.trim()) {
       validationErrors.email = "El E-Mail es requerido.";
     }
-
     if (!comments.trim()) {
       validationErrors.comments = "Los Comentarios son requeridos.";
     }
-
     if (Object.keys(validationErrors).length === 0) {
       const newContact = {
         id: Date.now(),

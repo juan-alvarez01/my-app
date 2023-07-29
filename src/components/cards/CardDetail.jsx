@@ -1,8 +1,10 @@
 import React from "react";
+import './Cards.css'
 
 const CardDetailLayout = ({ character, onCloseClick }) => {
   return (
-    <div className="card-detail-layout">
+    <div className="card">
+      <h1>Personaje Seleccionado</h1>
       <img src={character.image} alt={character.name} />
       <h3>{character.name}</h3>
       <p>Status: {character.status}</p>
@@ -20,5 +22,4 @@ const CardDetailLayout = ({ character, onCloseClick }) => {
     </div>
   );
 };
-
 export default CardDetailLayout;

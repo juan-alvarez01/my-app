@@ -3,6 +3,7 @@ import CharacterForm from '../../charterForm/charterForm';
 import CharacterList from '../../formList/formList'
 import { FormProvider } from '../../../context/FormContext';
 import MainLayout from '../../layout/MainLayout'
+import '../../formList/FormList.css'
 
 
 export default function CreateForm() {

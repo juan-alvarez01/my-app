@@ -1,5 +1,6 @@
 import React from "react";
 import { useContactFormContext } from "../../context/ContactFormContext";
+import './ContactForm.css'
 
 export default function ContactForm() {
   const {
@@ -17,7 +18,7 @@ export default function ContactForm() {
   return (
     <>
       <h1>Formulario De Contacto</h1>
-      <form onSubmit={handleSubmit} className="contact-form">
+      <form onSubmit={handleSubmit} >
         <div className="form-group">
           <label htmlFor="name">Nombre:</label>
           <input

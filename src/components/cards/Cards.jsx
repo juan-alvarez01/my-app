@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import './Cards.css'
 
-
 const Card = ({ character, onDetailClick }) => {
   return (
     <div className="card">
@@ -13,5 +12,4 @@ const Card = ({ character, onDetailClick }) => {
     </div>
   );
 };
-
 export default Card;
